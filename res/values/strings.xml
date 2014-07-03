@@ -4,11 +4,27 @@
     <string name="app_name">RemindMe</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    
+
     <!-- Related to Notification -->
     <string name="notification_title">Make Calendar Entry?</string>
-    
     <string name="notification_yes">Yes</string>
     <string name="notification_no">No</string>
+
+    <string-array name="indicators">
+        <item>due</item>
+        <item>bill</item>
+        <item>payment</item>
+    </string-array>
+
+    <string name="done">Done !</string>
+    <string name="share_description">Like this app? Your friends will too!</string>
+    <string name="customize">CUSTOMIZE</string>
+    <string name="about">Activated Remind Me.</string>
+    <string name="share_head">SHARE THE LOVE</string>
+    <string name="share_option">SHARE</string>
+    <string name="app_share_message">Download the android app -</string>
+    <string name="subject">Get Remind Me</string>
+    <string name="save_day_text">Save %1$s Days Before Event</string>
+    <string name="default_save_day_text">Default Save</string>
 
 </resources>

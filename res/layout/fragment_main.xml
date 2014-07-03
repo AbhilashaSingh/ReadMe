@@ -2,15 +2,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:layout_margin="15dp"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
     tools:context="infinitec.eleventh.remindme.MainActivity$PlaceholderFragment" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/remindme_logo" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/logo"
+        android:background="@color/bgcolor"
+        android:gravity="left|center_vertical"
+        android:text="@string/about"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/customize"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/about"
+        android:background="@color/bgcolor"
+        android:gravity="left|center_vertical"
+        android:text="@string/customize"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/customizeOption"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/customize"
+        android:background="@color/bg_customize"
+        android:gravity="left|center_vertical"
+        android:text="@string/default_save_day_text"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" 
+        android:onClick="processCustomizeDays"/>
+
+    <Button
+        android:id="@+id/shareHead"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/customizeOption"
+        android:background="@color/bgcolor"
+        android:gravity="left|center_vertical"
+        android:text="@string/share_head"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/shareDescription"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/shareHead"
+        android:background="@color/bgcolor"
+        android:gravity="left|center_vertical"
+        android:text="@string/share_description"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" />
+	
+    <Button
+        android:id="@+id/shareOption"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/shareDescription"
+        android:background="@color/bg_customize"
+        android:gravity="left|center_vertical"
+        android:text="@string/share_option"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" 
+        android:onClick="processShare"/>
+    
+    <Button
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/done"
+        android:background="@color/text_color" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bgcolor"
+        android:text="@string/done"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/text_color" 
+        android:onClick="processDone"/>
 
 </RelativeLayout>
